@@ -1,0 +1,28 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.178:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2021 15:53:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2021 15:53:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article with title 2020 CNCF Annual Report is retrieved
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2021 15:53:28] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2021 15:53:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:app:Article with title KubeCon + CloudNativeCon 2021 is retrieved
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2021 15:53:32] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2021 15:53:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.178:3111/ (Press CTRL+C to quit)
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.178:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 06:50:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 06:50:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.0.178:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2021 11:34:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2021 11:34:51] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2021 11:34:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:app:Article with title 2020 CNCF Annual Report is retrieved
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2021 11:35:01] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2021 11:35:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
