@@ -1,5 +1,6 @@
 import sqlite3
-import logging   
+import logging 
+import sys  
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 
@@ -91,5 +92,13 @@ def create():
 
 # start the application on port 3111
 if __name__ == "__main__":
-   logging.basicConfig(level=logging.DEBUG)
+   logger = logging.getLogger("__name__")
+   logging.basicConfig( level=logging.DEBUG)
+   h1 = logging.StreamHandler(sys.stdout)
+   h1.setLevel(logging.DEBUG)
+   h2 = logging.StreamHandler(sys.stderr)
+   h2.setLevel(logging.ERROR)
+   logger.addHandler(h1)
+   logger.addHandler(h2)
+   #logging.basicConfig(level=logging.DEBUG)
    app.run(host='0.0.0.0', port='3111')
