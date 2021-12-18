@@ -60,6 +60,7 @@ def metrics():
 def post(post_id):
     post = get_post(post_id)
     if post is None:
+      app.logger.info("A non-existing article is accessed")
       return render_template('404.html'), 404
     else:
       app.logger.info("Article with title %s is retrieved",post['title'])
@@ -68,6 +69,7 @@ def post(post_id):
 # Define the About Us page
 @app.route('/about')
 def about():
+    app.logger.info('The "About Us" page is retrieved')
     return render_template('about.html')
 
 # Define the post creation functionality 
@@ -78,6 +80,7 @@ def create():
         content = request.form['content']
 
         if not title:
+            app.logger.info('Tentative to create an article without a title')
             flash('Title is required!')
         else:
             connection = get_db_connection()
@@ -85,7 +88,7 @@ def create():
                          (title, content))
             connection.commit()
             connection.close()
-
+            app.logger.info('A new article "%s" is created ', title)
             return redirect(url_for('index'))
 
     return render_template('create.html')
